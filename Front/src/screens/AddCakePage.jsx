@@ -26,7 +26,7 @@ const AddCakePage = () => {
     if (image) formData.append('image', image);
 
     try {
-      const res = await fetch(`http://localhost:5000/api/cakes`, {
+      const res = await fetch(`https://navbaker.onrender.com/api/cakes`, {
         method: 'POST',
         headers: {
           Authorization: `Bearer ${token}`,

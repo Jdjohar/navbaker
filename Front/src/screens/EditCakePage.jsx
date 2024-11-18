@@ -19,7 +19,7 @@ const EditCakePage = () => {
     
     const fetchCake = async () => {
       try {
-        const response = await fetch(`http://localhost:5000/api/cakes/storeowner/ds`);
+        const response = await fetch(`https://navbaker.onrender.com/api/cakes/storeowner/ds`);
         const data = await response.json();
         if (response.ok) {
           setCake(data); // Set the current cake data into state
@@ -54,7 +54,7 @@ const EditCakePage = () => {
       return;
     }
 
-    const res = await fetch(`http://localhost:5000/api/cakes/editcakes/${id}`, {
+    const res = await fetch(`https://navbaker.onrender.com/api/cakes/editcakes/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',

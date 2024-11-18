@@ -20,7 +20,7 @@ app.use(express.json());
 app.use((req, res, next) => {
   const corsWhitelist = [
     "http://localhost:5173",
-    "https://khmc.vercel.app",
+    "https://navbaker.vercel.app",
   ];
   
   if (corsWhitelist.indexOf(req.headers.origin) !== -1) {

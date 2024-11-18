@@ -23,7 +23,7 @@
     "react-toastify": "^10.0.6",
     "string-strip-html": "^13.4.8"
   },
-  "proxy": "http://localhost:5000",
+  "proxy": "https://navbaker.onrender.com",
   "devDependencies": {
     "@eslint/js": "^9.9.0",
     "@types/react": "^18.3.3",

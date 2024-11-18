@@ -13,7 +13,7 @@ const MenuPage = () => {
     const fetchCakes = async () => {
       try {
         const response = await fetch(
-          `http://localhost:5000/api/cakes/storeowner/${id}` // Pass userId in the URL path
+          `https://navbaker.onrender.com/api/cakes/storeowner/${id}` // Pass userId in the URL path
         );
 
         if (!response.ok) {
